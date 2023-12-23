@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAFÉ D HORA</title>
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/c8741136-22d3-4c83-9376-e0d170e1371d/favicon.png?v=1690148412493"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style_realizarpedido.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>O que deseja saborear hoje?</h1>
+      <form id="order-form">
+        <!-- Conteúdo do cardápio -->
+        <div class="menu-item">
+          <label>Café Expresso</label>
+          <div class="quantity-btns">
+            <span class="quantity-btn" onclick="decrementQuantity(this)"
+              >-</span
+            >
+            <span class="quantity">0</span>
+            <span class="quantity-btn" onclick="incrementQuantity(this)"
+              >+</span
+            >
+          </div>
+          <span class="price">R$ 3,50</span>
+        </div>
+        <div class="menu-item">
+          <label>Café Americano</label>
+          <div class="quantity-btns">
+            <span class="quantity-btn" onclick="decrementQuantity(this)"
+              >-</span
+            >
+            <span class="quantity">0</span>
+            <span class="quantity-btn" onclick="incrementQuantity(this)"
+              >+</span
+            >
+          </div>
+          <span class="price">R$ 3,00</span>
+        </div>
+        <div class="menu-item">
+          <label>Café Latte</label>
+          <div class="quantity-btns">
+            <span class="quantity-btn" onclick="decrementQuantity(this)"
+              >-</span
+            >
+            <span class="quantity">0</span>
+            <span class="quantity-btn" onclick="incrementQuantity(this)"
+              >+</span
+            >
+          </div>
+          <span class="price">R$ 5,00</span>
+        </div>
+        <div class="menu-item">
+          <label>Cappuccino</label>
+          <div class="quantity-btns">
+            <span class="quantity-btn" onclick="decrementQuantity(this)"
+              >-</span
+            >
+            <span class="quantity">0</span>
+            <span class="quantity-btn" onclick="incrementQuantity(this)"
+              >+</span
+            >
+          </div>
+          <span class="price">R$ 5,50</span>
+        </div>
+        <div class="menu-item">
+          <label>Cappucino Chocolate</label>
+          <div class="quantity-btns">
+            <span class="quantity-btn" onclick="decrementQuantity(this)"
+              >-</span
+            >
+            <span class="quantity">0</span>
+            <span class="quantity-btn" onclick="incrementQuantity(this)"
+              >+</span
+            >
+          </div>
+          <span class="price">R$ 6,00</span>
+        </div>
+        <div class="menu-item">
+          <label>Mocha</label>
+          <div class="quantity-btns">
+            <span class="quantity-btn" onclick="decrementQuantity(this)"
+              >-</span
+            >
+            <span class="quantity">0</span>
+            <span class="quantity-btn" onclick="incrementQuantity(this)"
+              >+</span
+            >
+          </div>
+          <span class="price">R$ 6,50</span>
+        </div>
+        <div class="menu-item">
+          <label>Mochaccino</label>
+          <div class="quantity-btns">
+            <span class="quantity-btn" onclick="decrementQuantity(this)"
+              >-</span
+            >
+            <span class="quantity">0</span>
+            <span class="quantity-btn" onclick="incrementQuantity(this)"
+              >+</span
+            >
+          </div>
+          <span class="price">R$ 7,00</span>
+        </div>
+        <div class="menu-item">
+          <label>Macchiato</label>
+          <div class="quantity-btns">
+            <span class="quantity-btn" onclick="decrementQuantity(this)"
+              >-</span
+            >
+            <span class="quantity">0</span>
+            <span class="quantity-btn" onclick="incrementQuantity(this)"
+              >+</span
+            >
+          </div>
+          <span class="price">R$ 4,50</span>
+        </div>
+        <div class="menu-item">
+          <label>Café Caramelo</label>
+          <div class="quantity-btns">
+            <span class="quantity-btn" onclick="decrementQuantity(this)"
+              >-</span
+            >
+            <span class="quantity">0</span>
+            <span class="quantity-btn" onclick="incrementQuantity(this)"
+              >+</span
+            >
+          </div>
+          <span class="price">R$ 5,50</span>
+        </div>
+        <div class="menu-item">
+          <label>Café Gelado</label>
+          <div class="quantity-btns">
+            <span class="quantity-btn" onclick="decrementQuantity(this)"
+              >-</span
+            >
+            <span class="quantity">0</span>
+            <span class="quantity-btn" onclick="incrementQuantity(this)"
+              >+</span
+            >
+          </div>
+          <span class="price">R$ 5,50</span>
+        </div>
+        <div class="menu-item">
+          <label>Frappé de Chocolate</label>
+          <div class="quantity-btns">
+            <span class="quantity-btn" onclick="decrementQuantity(this)"
+              >-</span
+            >
+            <span class="quantity">0</span>
+            <span class="quantity-btn" onclick="incrementQuantity(this)"
+              >+</span
+            >
+          </div>
+          <span class="price">R$ 6,50</span>
+        </div>
+        <div class="menu-item">
+          <label>Affogato</label>
+          <div class="quantity-btns">
+            <span class="quantity-btn" onclick="decrementQuantity(this)"
+              >-</span
+            >
+            <span class="quantity">0</span>
+            <span class="quantity-btn" onclick="incrementQuantity(this)"
+              >+</span
+            >
+          </div>
+          <span class="price">R$ 7,00</span>
+        </div>
+
+        <input type="submit" class="submit-button" value="Fazer Pedido" />
+      </form>
+    </div>
+
+    <div class="order-summary" style="display: none">
+      <h2>Resumo do Pedido</h2>
+      <ul id="ordered-items"></ul>
+      <p><span id="order-total">R$ 0,00</span></p>
+      <label for="customer-name">Nome para Retirar o Pedido:</label>
+      <input type="text" id="customer-name" required />
+      <button id="confirm-button">Confirmar Compra</button>
+    </div>
+
+    <div class="thank-you-message" style="display: none">
+      <h2>
+        Obrigado por seu pedido, <span id="customer-name-display"></span>!
+      </h2>
+      <p>Seu pedido foi confirmado e estará pronto para retirada em breve.</p>
+    </div>
+
+    <script>
+      function incrementQuantity(quantityElement) {
+        const quantitySpan =
+          quantityElement.parentElement.querySelector(".quantity");
+        let quantity = parseInt(quantitySpan.textContent);
+        quantity++;
+        quantitySpan.textContent = quantity;
+      }
+
+      function decrementQuantity(quantityElement) {
+        const quantitySpan =
+          quantityElement.parentElement.querySelector(".quantity");
+        let quantity = parseInt(quantitySpan.textContent);
+        if (quantity > 0) {
+          quantity--;
+          quantitySpan.textContent = quantity;
+        }
+      }
+
+      document
+        .getElementById("order-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const items = document.querySelectorAll(".menu-item");
+          const orderSummary = document.querySelector(".order-summary");
+          const orderedItemsList = document.getElementById("ordered-items");
+          let totalAmount = 0;
+
+          orderedItemsList.innerHTML = "";
+          items.forEach((item) => {
+            const quantity = parseInt(
+              item.querySelector(".quantity").textContent
+            );
+            if (quantity > 0) {
+              const itemName = item.querySelector("label").textContent;
+              const itemPrice = parseFloat(
+                item
+                  .querySelector(".price")
+                  .textContent.replace("R$ ", "")
+                  .replace(",", ".")
+              );
+
+              totalAmount += quantity * itemPrice;
+
+              const listItem = document.createElement("li");
+              listItem.textContent = `${itemName} x ${quantity} - R$ ${(
+                quantity * itemPrice
+              )
+                .toFixed(2)
+                .replace(".", ",")}`;
+              orderedItemsList.appendChild(listItem);
+            }
+          });
+
+          document.getElementById("order-total").textContent = `R$ ${totalAmount
+            .toFixed(2)
+            .replace(".", ",")}`;
+          orderSummary.style.display = "block";
+        });
+
+      document
+        .getElementById("confirm-button")
+        .addEventListener("click", function () {
+          const customerNameInput =
+            document.getElementById("customer-name").value;
+          if (!customerNameInput.trim()) {
+            alert("Por favor, informe o nome para retirar o pedido.");
+            return;
+          }
+
+          document.getElementById("order-form").style.display = "none";
+          document.querySelector(".order-summary").style.display = "none";
+
+          const thankYouMessage = document.querySelector(".thank-you-message");
+          thankYouMessage.style.display = "block";
+          document.getElementById("customer-name-display").textContent =
+            customerNameInput;
+        });
+    </script>
+  </body>
+</html>
